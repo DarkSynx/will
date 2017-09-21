@@ -1,0 +1,370 @@
+body { font-family:"Helvetica Neue", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", arial, sans-serif; }
+
+a {color: white;}
+a:link		{text-decoration: none;}
+a:visited	{text-decoration: none;}
+a:hover		{text-decoration: underline;}
+a:active	{text-decoration: underline;}
+
+header  {
+	position:relative;
+	height:auto;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+header h1 {	height:32px; margin:0;}
+header ul {	float:right; margin:0;}
+header li {	float:right; margin-left:1px; list-style-type: none; font-size:1.0em;}
+header li button {font-size:0.9em;}
+button#ajouter{ font-size:1.1em; font-weight: 700; background-color:white; border:4px solid #3366FF; color:#3366FF; border-bottom:0; margin-top:2px;}
+
+div#page_quitte , div#page_quitte2 { display:none;
+	position: fixed;
+	border:0px solid red;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+	 z-index:2;
+	 background-color: rgba(0,0,0,0.32);
+}
+
+div#add_will { display:none;
+     position: fixed;
+	 text-align:center;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 256px;
+     height: 320px;
+     background-color: #ccc;
+	 padding:15px;
+	 
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+border: 6px solid rgba(0,0,0,0.5);
+
+
+z-index:3;
+}
+
+div#page_ouverture { display:none;
+     position: fixed;
+	 text-align:center;
+     margin: auto;
+     top: 30px;
+     right: 30px;
+     bottom: 30px;
+     left: 30px;
+
+     background-color: #ccc;
+	 padding:15px;
+	 
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+border: 6px solid rgba(0,0,0,0.5);
+
+overflow:hidden;
+z-index:3;
+}
+
+div#page_ouverture div#menu_ouvrir {
+	position: absolute;
+	height:64px;
+	top:0;right:0;left:0;
+	border: 3px solid blue;
+}
+
+div#page_ouverture div#oiframe {
+	position: absolute;
+	top:66px;
+	bottom:0;
+	right:0;left:0;
+	border: 3px solid red;
+	overflow:hidden;
+}
+
+div#page_ouverture div#oiframe iframe {
+	width:100%;
+	height:100%;
+	border: 3px solid yellow;
+}
+
+
+
+	div#add_will input#addlink {
+		width:100%;
+		margin-top:10px;
+		margin-bottom:10px;
+		
+	}
+	
+	div#add_will select#addtype {
+		width:100%;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	
+	div#add_will textarea#adddescription {
+		width:100%;
+		margin-top:10px;
+		height:128px;
+	}
+	
+section {
+	position:relative;
+	min-height:758px;
+	border-bottom: 3px solid #505050;
+	overflow: hidden;
+}
+
+ 
+	section div.articles:hover {      
+	animation-name: select_cl;
+    animation-duration: 0.8s; 
+	background-color: #E0E0E0;
+	}
+	
+ 	section div.articles {	
+	cursor:pointer;
+	box-shadow: 0 0 3px #F5F5F5;	
+		float:left;
+		margin:5px;
+		position:relative;
+		 background-color: transparent;
+		 padding:15px;
+		 width: 202px;
+		 height: 288px;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid white;
+
+		color:white;
+		text-shadow: 0px 1px 2px black;
+	}
+	
+@keyframes select_cl {
+    from {background-color: white;}
+    to {background-color: #E0E0E0;}
+}
+	section div.articles div.socle {
+		border: 3px solid transparent;
+		position:absolute;
+		top:8px; left:8px; right:8px; bottom:8px;
+		
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+		z-index:1;
+		overflow: hidden;
+	}
+	
+	section div.articles div.socle div.titre {
+		text-align:center;
+		position:absolute;
+		font-style: normal;
+		font-weight: 700;
+		border:0px solid red;
+		height:65px;
+		left:0; right:0; top:0;
+		/*background:rgba(0,0,0,0.32);*/
+		
+		z-index:2;
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+	}
+	section div.articles div.socle div.titre span {
+		position:relative;
+	}
+	
+	
+	section div.articles div.socle div.date { 
+		position:absolute;
+		bottom:0;
+		border:0px solid green;
+		height:26px;
+		left:5px;
+		font-style: normal;
+		font-weight: 700;
+		z-index:2;
+	}
+	section div.articles div.socle div.type {
+		position:absolute; /*display:none;*/
+		bottom:0;
+		border:0px solid blue;
+		height:26px;
+		right:5px;
+		font-style: normal;
+		font-weight: 700;
+		z-index:2;
+	}
+	
+	section div.articles div.socle div.vpab {position:absolute; 
+		border:0px solid yellow;
+		top:65px;
+		left:0;
+		right:0;
+		z-index:3;
+		text-align:center;
+	}
+	
+	section div.articles div.socle div.vpab span button {
+		width:24px; 
+		height:24px; 
+		text-align:center;
+		color:white;
+		border:1px solid #494949;
+		font-weight:bold;
+	}
+	
+	section div.articles div.socle div.vpab span.a,
+	section div.articles div.socle div.vpab span.a1
+	{
+		text-align:right;
+		/*padding-left:16px;*/
+		
+		margin-right:10px; 
+		margin-left:auto;
+		background-repeat: no-repeat;
+		background-position: left center;
+		font-size: 1.0em;
+	}
+	section div.articles div.socle div.vpab span.a1 {
+		/*margin-left:15px;*/
+		font-size: 0.98em;
+	}	
+	
+	section div.articles div.socle div.vpab span span {
+		position:absolute;
+		font-size: 0.7em;
+		margin-top:0;
+	}
+	
+	section div.articles div.socle div.vpab span.vue {
+		/*background-image: url('../images/vue.png');*/
+		
+	}
+	
+	section div.articles div.socle div.vpab span.positif {
+		/*background-image: url('../images/positif.png');*/
+
+	}
+	
+	section div.articles div.socle div.vpab span.negatif {
+		/*background-image: url('../images/negatif.png');*/
+
+	}
+	
+	section div.articles div.socle div.vpab span.complot {
+		/*background-image: url('../images/complot.png');*/	
+
+	}
+
+	
+	section div.articles div.socle a.ouvrir {
+		
+	}
+	
+	section div.articles div.socle div.images {		
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		border:0px solid yellow;
+		background-color: #202020;
+		background-image: url('../images/default.jpg');
+		background-repeat:no-repeat;
+		background-position:center center;
+		z-index:1;
+		text-align: center;
+		/*overflow: hidden;*/
+	}
+	section div.articles div.socle div.images img {
+		margin-left:-37%;
+		max-height: 100%;
+		
+	}
+	
+	section div.articles div.socle div.description {display:none;
+		padding:5px;
+		position:absolute;
+		border:0px solid green;
+		top:86px;
+		bottom:28px;
+		left:0;
+		right:0;
+		z-index:2;
+		
+		font-size:0.88em;
+		font-weight:bold;
+		
+		text-align:justify;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+		
+	  -webkit-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -ms-hyphens: auto;
+	  -o-hyphens: auto;
+	  hyphens: auto;
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+12,000000+50,000000+87,000000+100&0+0,0.5+12,0.65+50,0.5+87,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 12%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.5) 87%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 12%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0.5) 87%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 12%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0.5) 87%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+	
+	}
+
+	section div.articles div.socle div.description span {
+		position:relative;
+	}
+	
+	/*section div.articles:hover div.type,*/ 
+	section div.articles:hover div.socle div.vpab,
+	section div.articles:hover div.socle div.description
+	{ display:block; }
+	
+	
+aside   {  display:none;
+	position:fixed;	
+	top:0;
+	bottom:0;
+	right:0;
+	width:256px;
+	border: 3px solid grey;
+	background-color:#FAFAFA;
+}
+footer  {  
+	height:256px;
+	border-top: 3px solid #303030;
+	background-color:#F0F0F0;
+}
+
+input#recherche {
+	height:32px;
+	width:100%;
+	font-size:1.2em;
+	border:0;
+	border-bottom: 3px solid grey;
+	border-top: 3px solid #3366FF;
+	background-color:#FAFAFA;
+
+}

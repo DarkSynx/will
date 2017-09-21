@@ -1,0 +1,19 @@
+			<div id="{{ID}}" class="articles">
+				<div class='socle'>
+					<div class="titre">{{TITRE}}</div>
+					<div class="date">{{DATE}}</div>
+					<div class="type">{{TYPE}}</div>
+					<div class="vpab">
+							<!--<span class='vue a1'>{{VUE}}</span>-->
+							<span class='positif a' title="Cette article est pertinant !">	<button id="{{BID1}}" class="bv1" style="background-color:#3366FF;">+</button> {{POSITIF}}</span>
+							<span class='negatif a' title="Je n'y crois pas ! ">			<button	id="{{BID2}}" class="bv2" style="background-color:#FF6600;">−</button> {{NEGATIF}}</span>
+							<span class='complot a' title="Il se trame quelque chose ? ">	<button	id="{{BID3}}" class="bv3" style="background-color:#494949;">!</button> {{COMPLOT}}</span>
+					</div>
+					<a href="{{URL}}" >
+						<div class="images" {{IMAGE1}} >{{IMAGE2}}</div>
+						<div class="description">
+							{{DESCRIPTION}}
+						</div>
+					</a>
+				
+			</div>
